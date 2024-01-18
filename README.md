@@ -16,3 +16,5 @@ This repo is a monorepo with two packages:
 1. `cd packages/site && yarn start`
 
 Go to `localhost:8080` in your browser and open the inspector. You'll see that `@apply` has worked. If you look at the styles on the `<span>` inside of `<my-component>` you'll also see two definitions of the `font-bold` class - one in the global stylesheet and one on component's definition.
+
+I've added some `NOTE:` annotation comments to point out some key parts of the setup.
