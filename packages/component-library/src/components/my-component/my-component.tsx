@@ -4,7 +4,8 @@ import { format } from '../../utils/utils';
 @Component({
   tag: 'my-component',
   styleUrl: 'my-component.css',
-  shadow: true,
+  shadow: false,
+  scoped: true,
 })
 export class MyComponent {
   /**
@@ -27,6 +28,13 @@ export class MyComponent {
   }
 
   render() {
-    return <div>Hello, World! I'm {this.getText()}</div>;
+    return (
+      <div>
+        Hello, World! I'm <span class="font-bold">{this.getText()}</span>
+        <div class="content">
+          <slot></slot>
+        </div>
+      </div>
+    );
   }
 }
