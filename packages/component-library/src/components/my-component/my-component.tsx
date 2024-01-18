@@ -31,9 +31,6 @@ export class MyComponent {
     return (
       <div>
         Hello, World! I'm <span class="font-bold">{this.getText()}</span>
-        <div class="content">
-          <slot></slot>
-        </div>
       </div>
     );
   }
